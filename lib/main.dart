@@ -36,7 +36,7 @@ class OrientationLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Profile'),
+        title: const Text('News Feed'),
         centerTitle: true,
       ),
       body: LayoutBuilder(
@@ -147,69 +147,6 @@ class OrientationLayout extends StatelessWidget {
         ],
       ),
     );
-
-
-    // return Row(
-    //   children: [
-    //     Padding(
-    //       padding: const EdgeInsets.only(top: 8, bottom: 8),
-    //       child: SizedBox(
-    //         height: 300,
-    //         width: constraints.maxWidth * 0.4,
-    //         child: const SizedBox(
-    //           height: 300,
-    //           width: 300,
-    //           child: CircleAvatar(
-    //             backgroundImage: NetworkImage('https://watermark.lovepik.com/photo/20211121/large/lovepik-camera-picture_500584614.jpg',),
-    //             backgroundColor: Colors.white,
-    //           ),
-    //         ),
-    //       ),
-    //     ),
-    //
-    //     SingleChildScrollView(
-    //       child: SizedBox(
-    //         width: constraints.maxWidth * 0.6,
-    //         child: Column(
-    //           mainAxisSize: MainAxisSize.min,
-    //           children: [
-    //             const SizedBox(height: 10,),
-    //             const Text('John Doe', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),),
-    //             const Padding(
-    //               padding: EdgeInsets.symmetric(horizontal: 29, vertical: 10),
-    //               child: Text(
-    //                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-    //                 style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w500),
-    //               ),
-    //             ),
-    //
-    //             SizedBox(
-    //               width: 400,
-    //               height: 300,
-    //               child: GridView.builder(
-    //                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-    //                     crossAxisCount: 3,
-    //                     crossAxisSpacing: 0,
-    //                   ),
-    //                   itemCount: myItems.length,
-    //                   itemBuilder: (context, index){
-    //                     return GestureDetector(
-    //                       child: Container(
-    //                         margin: const EdgeInsets.all(5),
-    //                         width: 400,
-    //                         height: 300,
-    //                         child: Image.network(myItems[index]['img']!, fit: BoxFit.fill,),
-    //                       ),
-    //                     );
-    //                   }
-    //               ),
-    //             ),
-    //           ],
-    //         ),
-    //       ),
-    //     ),
-    //   ],
-    // );
   }
 }
 
